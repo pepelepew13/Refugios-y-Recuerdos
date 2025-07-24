@@ -565,7 +565,7 @@ section.visible img {
   .pagina-doble {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 0;
     max-width: 100%;
     padding: 0 10px;
   }
@@ -575,13 +575,15 @@ section.visible img {
     height: auto;
     font-size: 1rem;
     padding: 16px;
+    margin-bottom: 20px;
   }
 
-  .libro-flipbook {
-    padding: 10px;
-    margin: 20px auto;
+  .controles-libro-interno {
+    text-align: center;
+    margin-top: 10px;
   }
 }
+
 
 @media (max-width: 768px) {
   .carousel-galeria {
