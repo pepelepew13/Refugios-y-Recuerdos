@@ -561,3 +561,67 @@ section.visible img {
 }
 
 
+@media (max-width: 768px) {
+  .pagina-doble {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .pagina-flip {
+    width: 90%;
+    height: auto;
+    font-size: 1rem;
+    padding: 16px;
+  }
+
+  .libro-flipbook {
+    padding: 10px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-galeria {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .carrusel-item img {
+    height: 250px;
+    width: auto;
+  }
+
+  .carousel-galeria-btn {
+    margin: 10px auto;
+    padding: 10px 16px;
+  }
+
+  .miniaturas {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .miniaturas div {
+    width: 8px;
+    height: 8px;
+  }
+
+  .modal-imagen img {
+    max-width: 95%;
+    max-height: 90%;
+  }
+}
+
+@media (max-height: 700px) and (max-width: 768px) {
+  .pagina-flip {
+    font-size: 0.95rem;
+    padding: 14px;
+  }
+
+  .carrusel-item img {
+    height: 200px;
+  }
+}
