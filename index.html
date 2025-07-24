@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reencuentro con la infancia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<div class="scroll-indicador" id="scroll-indicador">
+  ↓
+</div>
+<body>
+  <div class="static-stars"></div>
+  <canvas id="stars"></canvas>
+  <header>
+    <div class="shooting-star" id="star"></div>
+    <div id="portada-bienvenida">
+      <div class="contenedor-bienvenida">
+        <h1 class="titulo-principal">Refugios y Recuerdos</h1>
+        <p class="subtitulo">Un viaje artístico hacia la infancia 🌌</p>
+        <button onclick="comenzarRecorrido()" class="boton-recorrido">Comenzar recorrido</button>
+        <div class="flecha-scroll">⬇</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección 1: Introducción -->
+  <section id="introduccion">
+    <div class="planet yellow"></div>
+    <div class="contenedor">
+      <h2 style="text-align: center;">🌟</h2>
+      <p>
+        Siempre me ha costado soltar la infancia. No porque quiera quedarme ahí, sino porque siento que todo lo que soy hoy empezó en esos juegos, en esos miedos, en esos refugios pequeños que creaba con lo que había.
+      </p>
+      <p>
+        Esto es un espacio de creación, reflexión y memoria sobre la infancia y el arte como posibilidad de volver a ser niño. Aquí recojo mis aproximaciones materiales, mis preguntas y mis gestos para entender qué significa cuidar y cuidarme a través del juego, la narración y los objetos.
+      </p>
+      <p>
+        Exploro la infancia como un lugar de construcción de sentido, no como nostalgia, sino como potencia creativa y política.
+      </p>
+  </div>
+  </section>
+
+  <!-- Sección 2: Entrada 1 - Libro interactivo -->
+  <section id="entrada1">
+    <div class="planet blue"></div>
+    <div class="contenedor" style="max-width: 1000px; padding: 40px;">
+      <h2>📖 Construir refugios</h2>
+      
+      <p>
+        Cuando era niña construía fuertes de sábanas. Usaba sillas, cobijas y almohadas. Nadie podía entrar si yo no lo permitía.
+        Me he preguntado muchas veces: ¿qué buscaba proteger con esos fuertes? ¿Qué me daba miedo afuera?
+      </p>
+
+      <img src="resource/fuerte-vacio.png" alt="Fuerte de sábanas vacío" class="imagen-fuerte"/>
+
+      <p>
+        Hace poco construí uno. Fue un ejercicio simple y profundo. Mientras lo armaba, sentía que cada cobija era un escudo, cada almohada un guardián.
+        Allí adentro, volví a sentirme seguro. Les conté a mis compañeros un cuento:
+      </p>
+
+      <div class="libro-flipbook">
+        <div id="portada-libro" class="pagina-portada-activa">
+          <div class="pagina-portada">
+            El niño que vivía dentro de un adulto
+          </div>
+          <button id="empezar-cuento">Empezar cuento</button>
+        </div>
+
+        <div class="pagina-doble oculto" id="pagina-doble">
+          <!-- JS insertará las dos páginas aquí -->
+        </div>
+
+        <div class="controles-libro-interno oculto" id="controles-libro">
+          <button id="anterior">←</button>
+          <button id="siguiente">→</button>
+        </div>
+      </div>
+
+      <img src="resource/fuerte-usado.png" alt="Personas dentro del fuerte" class="imagen-fuerte" style="max-width: 600px;"/>
+
+      <p class="comentario-final">
+        Pienso que el arte también es un fuerte de sábanas: un espacio que creamos para resistir la dureza del mundo, para inventar formas de vivir más suaves, más propias, más verdaderas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección 3: Entrada 2 - Tacto y memoria -->
+  <section id="entrada2">
+    <div class="planet pink"></div>
+    <div class="contenedor" style="max-width: 1000px; padding: 40px;">
+      <h2>🖐️ Tocar para recordar</h2>
+      <p>
+        El tacto como memoria. Les pedí a mis compañeros que cerraran los ojos y pensaran en eso que les recordaba a su infancia; y usaran el tacto como única guía. Les di plastilina y les pedí que crearan un objeto, lugar o cosa que les recordara su infancia.
+      </p>
+      <p>
+        Mientras amasaban, vi cómo sus manos se volvían más suaves, cómo sus gestos cambiaban. Algunos sonreían, otros fruncían el ceño intentando recordar detalles.
+        Cuando acabaron, cada figura era distinta: un pollo, un peluche, una ficha de dominó, un diente de león, un control.
+      </p>
+
+      <div class="cuadricula-4">
+        <img src="resource/cuadro1.png" alt="Persona amasando plastilina" />
+        <img src="resource/cuadro2.png" alt="Persona moldeando figura blanca" />
+        <img src="resource/cuadro3.png" alt="Grupo creando figuras" />
+        <img src="resource/cuadro4.png" alt="Manos trabajando con plastilina" />
+      </div>
+
+      <p class="preguntas-reflexion">
+        Me pregunté:
+        <ul>
+          <li>¿Por qué el tacto tiene tanta fuerza para recordarnos quiénes fuimos?</li>
+          <li>¿Qué memorias guardan nuestras manos que nuestra mente ya ha olvidado?</li>
+        </ul>
+      </p>
+
+      <p>
+        Esta práctica me enseñó que volver a ser niños no es solo una pregunta mía, sino un deseo colectivo de regresar a esos lugares donde fuimos cuidados, donde jugar era suficiente, donde el tiempo no nos exigía nada más que estar.
+      </p>
+      <p>
+        Pienso que crear con las manos es una forma de volver a habitar la infancia, de darle cuerpo a lo que solo era recuerdo, de hacerlo presente y tangible, aunque sea en una pequeña figura de plastilina.
+      </p>
+
+      <div class="imagenes-paralelas">
+        <img src="resource/ficha-domino.png" alt="Ficha de dominó hecha de plastilina" />
+        <img src="resource/figuras-finales.png" alt="Figuras terminadas en bandeja" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 4: Entrada 3 - Preguntas que me sostienen -->
+  <section id="entrada3">
+    <div class="planet green"></div>
+    <div class="contenedor" style="text-align: center;">
+      <h2>❓ Preguntas que me sostienen</h2>
+      <p>Estas preguntas guían mi investigación:</p>
+      <ul class="preguntas-lista">
+        <li>¿Cómo construyo refugios desde el arte?</li>
+        <li>¿Qué significa habitar el juego como práctica creativa?</li>
+        <li>¿Por qué volver a ser niño no es infantilizarse, sino resistir?</li>
+        <li>¿Cómo cuido al niño que fui en cada obra que hago?</li>
+      </ul>
+      <p class="reflexion-final">
+        No busco respuestas definitivas. Busco formas de mirar que me permitan seguir preguntando.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección 5: Entrada 4 - Galería -->
+  <section id="galeria">
+    <div class="planet violet"></div>
+    <h2>🖼️ Galería / Bitácora</h2>
+    <div class="contenedor" style="max-width: 1000px; padding: 40px;">
+      
+      <div class="carousel-galeria">
+        <button class="carousel-galeria-btn left" onclick="moverCarrusel(-1)">❮</button>
+        
+        <div class="carrusel-peliculas" id="carril">
+          <div class="carrusel-item"><img src="resource/galeria1.jpeg" onclick="verImagen(this.src)"></div>
+          <div class="carrusel-item"><img src="resource/galeria2.jpeg" onclick="verImagen(this.src)"></div>
+          <div class="carrusel-item"><img src="resource/galeria3.jpeg" onclick="verImagen(this.src)"></div>
+          <div class="carrusel-item"><img src="resource/galeria4.jpeg" onclick="verImagen(this.src)"></div>
+          <div class="carrusel-item"><img src="resource/galeria5.jpeg" onclick="verImagen(this.src)"></div>
+          <div class="carrusel-item"><img src="resource/galeria6.jpeg" onclick="verImagen(this.src)"></div>
+          <div class="carrusel-item"><img src="resource/galeria7.jpeg" onclick="verImagen(this.src)"></div>
+          <div class="carrusel-item"><img src="resource/galeria8.jpeg" onclick="verImagen(this.src)"></div>
+          <div class="carrusel-item"><img src="resource/galeria9.jpeg" onclick="verImagen(this.src)"></div>
+        </div>
+
+        <button class="carousel-galeria-btn right" onclick="moverCarrusel(1)">❯</button>
+      </div>
+
+      <div class="miniaturas" id="miniaturas"></div>
+    </div>
+
+    <div class="modal-imagen" id="modalImagen" onclick="cerrarModal()">
+      <img id="imagenExpandida" src="" />
+    </div>
+  </section>
+
+
+  <footer>
+    “Lo esencial es invisible a los ojos” – El Principito
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
